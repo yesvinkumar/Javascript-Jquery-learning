@@ -27,6 +27,7 @@ Coding challenges - Try it yourself online
 Check out the below code challenges made with [Code School](https://www.codeschool.com/)
 
 https://www.javascript.com/
+
 http://try.jquery.com/
 
 Exercises
