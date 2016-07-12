@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript/Jquery Learning</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        padding:0;
+        margin:30px 0;
+      }
+      .wrapper {
+        width:960px;
+        margin:0 auto;
+      }
+      .panel {
+        background:#ccc;
+        padding: 10px 25px;
+        border-radius: 10px;
+      }
+      pre {
+          font-family: monospace;
+      }
+      .code {
+          font-family: monospace;
+          color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="panel">
+        <h1>Javascript makes it easy to:</h1>
+        <ul>
+          <li>Find elements in an HTML document</li>
+          <li>Change HTML content</li>
+          <li>Listen to what a user does and react accordingly</li>
+          <li>Animate content on the page</li>
+          <li>talk over the network to fetch new content</li>
+        </ul>
+      </div>
+
+      <h3>Lesson 2 - Find Elements</h3>
+
+      <h4 id="dom">The DOM - The Document Object Model</h4>
+      <p>The Document Object Model is a way to manipulate the structure and style of an HTML page. It represents the internals of the page as the browser sees it, and allows the developer to alter it with JavaScript.</p>
+
+      <h4>Trees and Branches</h4>
+      <p>
+        HTML is an XML-like structure in that the elements form a structure of parents’ nodes with children, like the branches of a tree. There is one root element <span class="code"> html </span> with branches like <span class="code"> head </span> and <span class="code"> body </span>, each with their own branches. For this reason, the DOM is also called the <strong>DOM tree.</strong>
+      </p>
+
+      <p>
+        Modifying the DOM, by picking an element and changing something about it, is something done often in JavaScript. </br> To access the DOM from JavaScript, the <span class="code"> document </span> object is used. It’s provided by the browser and allows code on the page to interact with the content.
+      </p>
+
+      <h4 id="get">Getting an Element</h4>
+
+      <p>
+        The first thing to know is how to get an element. There are a number of ways of doing it, and browsers support different ones. Starting with the best supported we’ll move through to the latest, and most useful, versions.
+      </p>
+
+      <ul>
+        <li>By ID: <span class="code">document.getElementById</span> </li>
+        <li>By Tag Name: <span class="code">document.getElementById</span> </li>
+        <li>By Class Name: <span class="code">document.getElementsByClassName</span> </li>
+        <li>By CSS Selector: <span class="code">document.querySelector('id')</span> | <span class="code">document.querySelectorAll('.class');</span> </li>
+      </ul>
+
+      <p><strong>Task:</strong> Learn to find elements in the HTML document and console.log the results</p>
+      <p>Example:</p>
+      <pre>
+          var htmlElement = document.getElementById('dom');
+      </pre>
+
+    </div>
+    <script type="text/JavaScript">
+      console.log("Javascript Learning - Lesson 2");
+      var htmlElement = document.getElementById('dom');
+      alert("htmlElement: "+ htmlElement);
+    </script>
+  </body>
+</html>
