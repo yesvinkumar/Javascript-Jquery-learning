@@ -34,4 +34,3 @@ Exercises
 ------------------
 Find more lessons and exercise files in the exercises folder
 
-add from other repo
