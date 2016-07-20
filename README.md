@@ -34,3 +34,4 @@ Exercises
 ------------------
 Find more lessons and exercise files in the exercises folder
 
+read modified rvr
